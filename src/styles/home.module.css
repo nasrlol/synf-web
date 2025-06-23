@@ -1,9 +1,9 @@
-section > article {
-	padding: 20px;
-	border: 1px solid grey;
-	border-radius: 20px;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-align: center;
 }
-
 .introduction {
 	margin: 50px;
 }
@@ -20,20 +20,8 @@ section > article {
 	min-width: 500px;
 }
 
-.benefits {
-	margin: 50px;
-}
-
-.how-it-works {
-	margin: 50px;
-}
-
 .home {
-	margin: 10px auto 30px;
+	margin: 5px auto 30px;
 	line-height: 1.6;
 	max-width: 800px;
-}
-
-.cta-button {
-	margin-left: 50px;
 }

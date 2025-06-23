@@ -31,32 +31,7 @@ function home() {
 						<h3>Detailed Reports</h3>
 						<p>View historical logs and trends for better system insights.</p>
 					</article>
-					<article>
-						<h3>Lightweight & Fast</h3>
-						<p>Designed to run efficiently without slowing down your device.</p>
-					</article>
 				</section>
-
-				<section className={styles.features}>
-					<h2>What Makes This Unique?</h2>
-					<ul>
-						<li>️Open-source and customizable</li>
-						<li>️Supports multiple operating systems</li>
-						<li>️Integrates easily with existing infrastructure</li>
-						<li>️Cloud and on-premise deployment options</li>
-					</ul>
-				</section>
-
-				<section className={styles.howItWorks}>
-					<h2>How It Works</h2>
-					<ol>
-						<li>Install the monitoring agent on your device.</li>
-						<li>Connect it to the dashboard for live insights.</li>
-						<li>Customize alerts and notifications based on thresholds.</li>
-						<li>View detailed reports and optimize performance.</li>
-					</ol>
-				</section>
-				<button className={styles.ctaButton}>Get Started</button>
 			</div>
 		</>
 	);
