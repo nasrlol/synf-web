@@ -1,24 +1,46 @@
-import "../styles/public.module.css";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import styles from "../styles/login.module.css";
+import {useNavigate} from "react-router-dom";
 
-function loginPage() {
+function LoginPage() {
+
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
+	const navigate = useNavigate();
+
+	const handleLogin  = function (){
+		// login system
+	};
+
 	return (
 		<>
-			<section className="reg">
-				<form>
-					<input type="email" name="email" placeholder="Email" required />
-					<input type="password" name="pswd" placeholder="Password" required />
+			<section className={styles.reg}>
+				<form onSubmit={handleLogin}>
+					<input
+						type="email"
+						name="email"
+						placeholder="example@gmail.com"
+						value={email}
+						onChange={(e) => setEmail(e.target.value)}
+						required
+					/>
+					<input
+						type="password"
+						name="password"
+						placeholder="Your password"
+						value={password}
+						onChange={(e) => setPassword(e.target.value)}
+						required
+					/>
 					<br />
-					<button>
-						<Link to="/Login/Dashboard">Login</Link>
-					</button>
+					<button type="submit">Login</button>
 				</form>
-				<button>
-					<Link to="/Signup">Create an account</Link>
+				<button onClick={() => navigate("/Signup")}>
+					<p>Register</p>
 				</button>
 			</section>
 		</>
 	);
 }
 
-export default loginPage;
+export default LoginPage;

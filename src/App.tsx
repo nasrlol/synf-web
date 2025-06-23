@@ -6,7 +6,7 @@ import Home from "./pages/home.tsx";
 import Login from "./pages/login.tsx";
 import About from "./pages/about.tsx";
 import Install from "./pages/install.tsx";
-import Signup from "./public/signup.tsx";
+import Signup from "./pages/signup.tsx";
 import Dashboard from "./pages/dashboard.tsx";
 
 function App() {

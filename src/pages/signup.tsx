@@ -1,24 +1,51 @@
-import "../styles/public.module.css";
-import { Link } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
+import styles from "../styles/login.module.css"
+import {useState} from "react";
 
-function signin() {
+function Signin() {
+	const [username, setUsername] = useState("");
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
+	const navigate = useNavigate();
+
+	const handleRegistration = function () {
+
+	}
 	return (
 		<>
-			<section className="reg">
-				<form>
-					<input type="text" name="txt" placeholder="User name" required />
-					<input type="email" name="email" placeholder="Email" required />
-					<input type="password" name="pswd" placeholder="Password" required />
-					<button>
-						<Link to="/signup">Sign up</Link>
-					</button>
+			<section className={styles.reg}>
+				<form onSubmit={handleRegistration}>
+					<input
+						type="text"
+						name="text"
+						placeholder="John Doe"
+						value={username}
+						onChange={(e) => setUsername(e.target.value)}
+						required />
+					<input
+						type="email"
+					   	name="email"
+						value={email}
+						placeholder="Email"
+						onChange={(e) => setEmail(e.target.value)}
+						required
+					/>
+					<input
+						type="password"
+						name="password"
+						placeholder="Your password"
+						value={password}
+						onChange={(e) => setPassword(e.target.value)}
+						required
+					/>
+					<button type="submit">Sign In</button>
 				</form>
-				<button>
-					<Link to="/login">Already have an account?</Link>
+				<button onClick={() => navigate("/Login")}>
+					<p>Already have an account?</p>
 				</button>
 			</section>
 		</>
 	);
 }
 
-export default signin;
+export default Signin;
