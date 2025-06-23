@@ -1,12 +1,12 @@
-import hero from "../layout/hero.tsx";
-import "./home.css";
+import hero from "../components/hero.tsx";
+import styles from "../styles/home.module.css";
 
 function home() {
 	return (
 		<>
-			<div className="home">
+			<div className={styles.home}>
 				{hero()}
-				<section className="introduction">
+				<section className={styles.introduction}>
 					<h2>Why Choose Our Monitoring Solution?</h2>
 					<p>
 						Our system monitoring tool provides real-time insights into CPU, memory, storage, and network
@@ -14,7 +14,7 @@ function home() {
 					</p>
 				</section>
 
-				<section className="features">
+				<section className={styles.features}>
 					<article>
 						<h3>Real-Time Monitoring</h3>
 						<p>Track CPU, RAM, storage, and network usage live.</p>
@@ -37,7 +37,7 @@ function home() {
 					</article>
 				</section>
 
-				<section className="benefits">
+				<section className={styles.features}>
 					<h2>What Makes This Unique?</h2>
 					<ul>
 						<li>️Open-source and customizable</li>
@@ -47,7 +47,7 @@ function home() {
 					</ul>
 				</section>
 
-				<section className="how-it-works">
+				<section className={styles.howItWorks}>
 					<h2>How It Works</h2>
 					<ol>
 						<li>Install the monitoring agent on your device.</li>
@@ -56,8 +56,7 @@ function home() {
 						<li>View detailed reports and optimize performance.</li>
 					</ol>
 				</section>
-
-				<button className="cta-button">Get Started</button>
+				<button className={styles.ctaButton}>Get Started</button>
 			</div>
 		</>
 	);

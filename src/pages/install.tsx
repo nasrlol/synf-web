@@ -1,4 +1,4 @@
-import "./install.css";
+import "../styles/install.module.css";
 
 function install() {
 	return (
