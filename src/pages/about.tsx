@@ -1,9 +1,9 @@
-import '../styles/about.module.css'
+import styles from '../styles/about.module.css'
 
 function about() {
 	return (
-		<section className="about">
-			<section id="overview">
+		<>
+			<section className={styles.about}>
 				<h2>Overview</h2>
 				<p>
 					This project is a comprehensive system designed to efficiently manage and analyze system statistics
@@ -14,7 +14,7 @@ function about() {
 				</p>
 			</section>
 
-			<section id="features">
+			<section className={styles.about}>
 				<h2>Key Features</h2>
 				<ul>
 					<li>
@@ -37,14 +37,10 @@ function about() {
 						<strong>Secure Data Storage:</strong> MariaDB is used to store user data and system statistics
 						securely.
 					</li>
-					<li>
-						<strong>Docker Support:</strong> The entire application can be containerized for easy deployment
-						and scaling.
-					</li>
 				</ul>
 			</section>
 
-			<section id="tech-stack">
+			<section className={styles.about}>
 				<h2>Technology Stack</h2>
 				<ul>
 					<li>
@@ -62,12 +58,9 @@ function about() {
 					<li>
 						<strong>Version Control:</strong> Git
 					</li>
-					<li>
-						<strong>Containerization (Optional):</strong> Docker & Docker Compose
-					</li>
 				</ul>
 			</section>
-		</section>
+		</>
 	);
 }
 
