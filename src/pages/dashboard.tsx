@@ -1,33 +1,25 @@
-import "../styles/dashboard.module.css";
+import styles from "../styles/dashboard.module.css";
 
 function dashboard() {
 	return (
 		<>
-			<div className="dashboard">
-				<div className="card">
-					<h3>CPU Usage</h3>
-					<p className="stat-value"></p>
-				</div>
-				<div className="card">
-					<h3>CPU Temperature</h3>
-					<p className="stat-value">0%</p>
-				</div>
-				<div className="card">
-					<h3>RAM Usage</h3>
-					<p className="stat-value">0%</p>
-				</div>
+			<div className={styles.dashboard}>
 
-				<div className="card">
+				<div className={styles.card}>
+					<h3>CPU Temperature</h3>
+					<p className={styles.statValue}>0%</p>
+				</div>
+				<div className={styles.card}>
 					<h3>Memory Usage</h3>
-					<p className="stat-value">0%</p>
+					<p className={styles.statValue}>0%</p>
 				</div>
-				<div className="card">
+				<div className={styles.card}>
 					<h3>Disk Usage</h3>
-					<p className="stat-value">0%</p>
+					<p className={styles.statValue}>0%</p>
 				</div>
-				<div className="card">
+				<div className={styles.card}>
 					<h3>Network Status</h3>
-					<p className="stat-value">Offline</p>
+					<p className={styles.statValue}>Offline</p>
 				</div>
 			</div>
 		</>

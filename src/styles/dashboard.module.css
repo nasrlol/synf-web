@@ -2,31 +2,43 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 100px;
+	gap: 2rem;
+	padding: 2rem;
+	min-height: 100vh;
+	box-sizing: border-box;
 }
+
 .card {
-	background-color: #18272f;
-	padding: 20px;
-	min-width: 100%;
-	min-height: 250px;
-	border-radius: 10px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-	margin: 50px;
+	background-color: #1e2d3a;
+	padding: 2rem;
+	flex: 1 1 300px;
+	max-width: 350px;
+	max-height: 300px;
+	border-radius: 1rem;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+	transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.card > h3 {
-	color: white;
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
 
-.card > p {
-	text-transform: lowercase;
+.card h3 {
 	color: #ffffff;
-	font-weight: 600;
-	margin-top: 10px;
-	font-size: 20px;
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+	text-align: center;
 }
-.stat-value {
-	font-size: 2em;
-	font-weight: 600;
-	color: #ffffff;
+
+.statValue {
+	font-size: 2rem;
+	color: #4fc3f7;
+	font-weight: bold;
+	text-align: center;
+}
+
+.card p {
+	margin: 0;
+	text-transform: none;
 }

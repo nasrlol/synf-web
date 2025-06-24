@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function header() {
+function horNav() {
 	return (
 		<header>
 			<nav>
@@ -23,4 +23,4 @@ function header() {
 	);
 }
 
-export default header;
+export default horNav;

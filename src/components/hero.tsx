@@ -1,4 +1,4 @@
-import "./hero.css";
+import "../styles/hero.css";
 
 function hero() {
 	return <h1 className="hero">SYNF</h1>;
