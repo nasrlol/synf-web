@@ -6,14 +6,6 @@ function home() {
 		<>
 			<div className={styles.home}>
 				{hero()}
-				<section className={styles.introduction}>
-					<h2>Why Choose Our Monitoring Solution?</h2>
-					<p>
-						Our system monitoring tool provides real-time insights into CPU, memory, storage, and network
-						usage. With smart alerts and strong security, it ensures optimal performance and privacy.
-					</p>
-				</section>
-
 				<section className={styles.features}>
 					<article>
 						<h3>Real-Time Monitoring</h3>

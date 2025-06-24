@@ -38,11 +38,12 @@ section {
 	border-color: #aaa;
 }
 
+
+
 h2 {
 	font-size: 1.8rem;
 	margin-bottom: 1rem;
 	color: #2a2a2a;
-	border-bottom: 2px solid #ccc;
 	padding-bottom: 0.4rem;
 	font-weight: 600;
 }

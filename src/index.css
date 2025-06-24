@@ -112,15 +112,13 @@ footer ul {
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 3rem;
+	gap: 2rem;
 }
 
 .SYNF {
 	margin-right: auto;
 	font-size: 1.25rem;
 }
-
-/* Links */
 
 a {
 	color: #ffffff;
@@ -149,8 +147,6 @@ a:hover::before {
 	transform-origin: left;
 }
 
-/* Responsive */
-
 @media (max-width: 768px) {
 	main {
 		width: 95%;
@@ -167,7 +163,4 @@ a:hover::before {
 		gap: 1rem;
 	}
 
-	.SYNF {
-		margin: 0;
-	}
 }

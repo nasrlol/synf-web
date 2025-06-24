@@ -44,13 +44,13 @@ function about() {
 				<h2>Technology Stack</h2>
 				<ul>
 					<li>
-						<strong>Frontend:</strong> React, JavaScript (or TypeScript if applicable)
+						<strong>Frontend:</strong> React, TypeScript
 					</li>
 					<li>
-						<strong>API Layer:</strong> Go (Golang)
+						<strong>API Layer:</strong> Go
 					</li>
 					<li>
-						<strong>Backend:</strong> C (compiled with GCC)
+						<strong>Backend:</strong> C
 					</li>
 					<li>
 						<strong>Database:</strong> MariaDB
